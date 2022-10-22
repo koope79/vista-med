@@ -1,0 +1,120 @@
+.patientContainer{
+    padding: 1% 1%;
+    display: flex;
+    gap: 1px;
+    height: 100vh;
+
+    .dots {
+        transform: rotate(90deg) scale(0.7);
+        align-self: center;
+    }
+}
+
+.infoPatient {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+    .top{
+        display: flex;
+        justify-content: space-between;
+        padding: 2%;
+        background-color: rgba(70, 148, 184, 1);
+        color: #fff;
+
+        .title{}
+        .arrow_icon{}
+    }
+
+    .description{
+        font-size: 14px;
+
+        div{
+            margin-top: 3px;
+            padding: 5px 0 5px 0;
+            display: flex;
+        }
+        .desc_field {
+            display: inline-block;
+            border-bottom: 1px solid gray;
+            margin-left: 5px;
+            width: 150px;
+        }
+    }
+}
+
+.info_active{
+    border: 2px solid rgba(70, 148, 184, 1);
+}
+
+.listPatients {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+    .top{
+        display: flex;
+        text-transform: uppercase;
+        background-color: rgba(250, 250, 250, 1);
+
+        div{
+            padding: 2%;
+            cursor: pointer;
+        }
+
+        .top_active {
+            color: rgba(70, 148, 184, 1);
+            border-bottom: 2px solid rgba(70, 148, 184, 1);
+        }
+    }
+
+    .list_content{
+        height: 92%;
+
+        .table {
+            display: flex;
+            border-top: 1px solid rgb(209, 209, 209);
+            padding: 2%;
+    
+            .table_column{
+                flex: 1 1 33.33%;
+                font-size: 12px;
+                color: gray;
+            }
+        }
+    
+        .renderList{
+            height: 94%;
+            overflow: auto;
+            scrollbar-width: none;
+
+            .desc_columns{
+                font-size: 14px;
+                display: flex;
+                border-top: 1px solid rgb(209, 209, 209);
+                padding: 2%;
+        
+                div {
+                    flex: 1 1 33.33%;
+                }
+        
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgba(238, 238, 238, 1);
+                    border-left: 2px solid rgba(70, 148, 184, 1);
+                }
+
+                &:last-child{
+                    border-bottom: 1px solid rgb(209, 209, 209);
+                }
+            }
+        }
+
+    }
+
+    
+
+    
+}
